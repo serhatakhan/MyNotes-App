@@ -32,7 +32,10 @@ function RootNavigator() {
         headerTransparent: true
       }} name={ADDNOTE} component={AddNote} />
       <Stack.Screen options={{headerShown: false}} name={MYNOTES} component={MyNotes} />
-      <Stack.Screen name={NOTEDETAIL} component={NoteDetail} />
+      <Stack.Screen options={{
+        headerShadowVisible: false,
+        headerTransparent: true
+      }} name={NOTEDETAIL} component={NoteDetail} />
       <Stack.Screen name={STATEXAMPLE} component={StateExample} />
       <Stack.Screen name={USEFFECTEXAMPLE} component={UseEffectExample} />
       <Stack.Screen name={SECONDSCREEN} component={SecondScreen} />

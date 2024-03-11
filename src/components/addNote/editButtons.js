@@ -10,27 +10,27 @@ import {
   TextalignLeft,
 } from 'iconsax-react-native';
 
-const EditButtons = () => {
+const EditButtons = ( {onChangeStyle} ) => {
 
   // bu diziyi maple dönüp içindeki iconları render ettik
   const Buttons = [
     {
       id: 1,
-      name: 'bold',
+      value: 'bold',
       icon: (
         <TextBold size="30" color={AppColors.SECONDARY} variant="Outline" />
       ),
     },
     {
       id: 2,
-      name: 'bold',
+      value: 'italic',
       icon: (
         <TextItalic size="30" color={AppColors.SECONDARY} variant="Outline" />
       ),
     },
     {
       id: 3,
-      name: 'bold',
+      value: 'underline',
       icon: (
         <TextUnderline
           size="30"
@@ -41,7 +41,7 @@ const EditButtons = () => {
     },
     {
       id: 4,
-      name: 'bold',
+      value: 'left',
       icon: (
         <TextalignLeft
           size="30"
@@ -52,7 +52,7 @@ const EditButtons = () => {
     },
     {
       id: 5,
-      name: 'bold',
+      value: 'center',
       icon: (
         <TextalignCenter
           size="30"
@@ -63,7 +63,7 @@ const EditButtons = () => {
     },
     {
       id: 6,
-      name: 'bold',
+      value: 'justify',
       icon: (
         <TextalignJustifycenter
           size="30"
@@ -77,7 +77,7 @@ const EditButtons = () => {
   return (
     <View style={styles.container}>
       {Buttons.map((item, index) => (
-        <TouchableOpacity key={item.id}>{item.icon}</TouchableOpacity>
+        <TouchableOpacity onPress={()=> onChangeStyle(item.value)} key={item.id}>{item.icon}</TouchableOpacity>
       ))}
     </View>
   );
