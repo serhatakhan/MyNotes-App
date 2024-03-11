@@ -26,5 +26,6 @@ Bu proje, **React Native** kullanılarak geliştirilmiş bir not alma uygulamas�
 
 ## Uygulama Gifi
 
+![EkranKayd2024-03-1121 04 17-ezgif com-video-to-gif-converter](https://github.com/serhatakhan/MyNotes-App/assets/147662915/d607cd9f-0fc7-4d9e-a39f-f37c1653af9a)
 
 
